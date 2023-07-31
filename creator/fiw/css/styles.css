@@ -1,3 +1,124 @@
-body {
-  background-color: #FFDAB9; /* รหัสสีพีช */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* ปิดการแสดง scrollbar ทั้งในแนวนอนและแนวตั้ง */
+  background-color: #FFDAB9;  /*รหัสสีพีช */
+}
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer h4, .footer a {
+  margin: 0;
+  display: inline; /* Set the display property to "inline" */
+}
+
+.footer h4 {
+  color: rgb(0, 0, 0);
+}
+
+.footer a {
+  text-decoration: none;
+  margin: auto;
+  color: rgb(11, 173, 35);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative; /* Add position relative to the container */
+}
+
+.frameTik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 30%;
+  border-radius: 10px;
+  background-color: #e09999;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s;
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+
+  /* Adjust the position of the frame */
+  position: absolute;
+  top: 10%; /* Move the frame to 10% from the top */
+  left: 30%; /* Move the frame to 10% from the left */
+}
+
+.frameTik button {
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Add pointer cursor on hover */
+  bottom: -30px; /* Move the button down by 30px from the bottom of the frame */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+}
+
+.frameTik button:hover {
+  background-color: #e09999; /* Red color when hovering over the button */
+  color: #fff; /* White text color when hovering over the button */
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 30%;
+  border-radius: 10px;
+  background-color: #e09999;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s;
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+
+  /* Adjust the position of the frame */
+  position: absolute;
+  top: 10%; /* Move the frame to 10% from the top */
+  left: 10%; /* Move the frame to 10% from the left */
+}
+
+.frame button {
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Add pointer cursor on hover */
+  bottom: -30px; /* Move the button down by 30px from the bottom of the frame */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+}
+
+.frame button:hover {
+  background-color: #e09999; /* Red color when hovering over the button */
+  color: #fff; /* White text color when hovering over the button */
+}
+
+.link-no-underline {
+  text-decoration: none;
+  margin: auto;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
